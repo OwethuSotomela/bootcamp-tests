@@ -3,7 +3,6 @@ function mostProfitableDepartment(productList){
    var salesDataMap = {};
    var productList1 = [];
      for(var i=0;i<productList.length; i++){
-        //var theSales = productList[i];
        if(salesDataMap[productList[i].department] == undefined){
              salesDataMap[productList[i].department] = productList[i].sales;
          }
