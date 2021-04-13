@@ -23,5 +23,32 @@ function mostProfitableDepartment(productList){
     console.log(theDepart);
    return theDepart;
  }
- 
+
+
+ function mostProfitableDay(profitDay){
+  const map = {};
+  for (var i in profitDay){
+    const dept = profitDay[i];
+    map[dept.day] = 0;
+  }
+ for(var i in  profitDay){
+    const dept = profitDay[i];
+    var currentDeptTotal = map[dept.day];
+    currentDeptTotal += dept.sales;
+    map[dept.day] = currentDeptTotal;
+  }
+  var currentMaxDays = 0;
+  var currentPro = "";
+  for (const mostProfit in map){
+    const currentProDay = map[mostProfit];
+    if( currentProDay > currentMaxDays){
+      currentMaxDays = currentProDay;
+      console.log(currentMaxDays);
+      currentPro = mostProfit;
+    }
+  }
+  console.log(currentPro);
+  return  currentPro;
+
+}
  
