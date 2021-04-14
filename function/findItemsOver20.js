@@ -1,8 +1,8 @@
-function findItemsOver20(productList){
+function findItemsOver20(itemList){
     var products = [];
-      for(var i=0;i<productList.length; i++){
-        if(productList[i].qty > 20){
-               products.push(productList[i]);
+      for(var i=0;i<itemList.length; i++){
+        if(itemList[i].qty > 20){
+               products.push(itemList[i]);
            }
     }
     return products;

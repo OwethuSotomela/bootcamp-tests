@@ -1,12 +1,12 @@
-function findItemsOver(productList,threshold){
+function findItemsOver(itemList,threshold){
 	console.log(threshold);	
-  var productList1 = [];
-	for(var i=0;i<productList.length; i++){
-      if(productList[i].qty > threshold){
-         	productList1.push(productList[i]);
+  var itemList1 = [];
+	for(var i=0;i<itemList.length; i++){
+      if(itemList[i].qty > threshold){
+         	itemList1.push(itemList[i]);
          }
   }
-  return productList1;
-  alert(productList1);
+  return itemList1;
+  alert(itemList1);
 }
 
